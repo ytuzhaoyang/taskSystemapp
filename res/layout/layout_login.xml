@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="clip_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#ff1a93ae"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_login_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/default_icon" />
+
+    <EditText
+        android:id="@+id/et_login_phonenum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/card_three"
+        android:hint="@string/phonenum"
+        android:inputType="phone"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip"
+        android:singleLine="true"
+        android:textColor="#ff656c74"
+        android:textColorHint="#ffa3a3a3"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/et_login_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/card_three"
+        android:hint="@string/pwd"
+        android:inputType="textPassword"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip"
+        android:singleLine="true"
+        android:textColor="#ff656c74"
+        android:textColorHint="#ffa3a3a3"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/but_login_login"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="30.0dp"
+        android:layout_marginRight="30.0dp"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/publishbtn"
+        android:text="@string/login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/tv_login_registnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/registernow"
+            android:textColor="#ffff4e00"
+            android:textSize="12sp" 
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_login_lostpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/lostpwd"
+            android:textColor="#ffff4e00"
+            android:textSize="12sp" 
+            android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

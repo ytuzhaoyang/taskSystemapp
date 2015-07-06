@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#ff1a93ae"
+        android:gravity="center"
+        android:text="@string/regist"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_regist_uploadicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_regist" 
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login_upload_icon" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="90.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/regist_gender"
+                android:textColor="#ff656c74"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="90.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_weight="2.0" >
+
+            <ImageView
+                android:id="@+id/iv_regist_gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/male" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_regist_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/card_three"
+        android:hint="@string/regist_phone_hint"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip"
+        android:singleLine="true"
+        android:textColor="#ff656c74"
+        android:textColorHint="#ffa3a3a3"
+        android:textSize="12.0sp" />
+
+    <EditText
+        android:id="@+id/et_regist_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/card_three"
+        android:hint="@string/regist_pwd_hint"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="10.0dip"
+        android:singleLine="true"
+        android:textColor="#ff656c74"
+        android:textColorHint="#ffa3a3a3"
+        android:textSize="12.0sp" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_regist_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_weight="1.5"
+            android:background="@drawable/card_three"
+            android:hint="@string/regist_code_hint"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip"
+            android:singleLine="true"
+            android:textColor="#ff656c74"
+            android:textColorHint="#ffa3a3a3"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:id="@+id/but_regist_getcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_weight="1.5"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip"
+            android:text="@string/regist_getcode"
+            android:textColor="#ff656c74"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+  -->
+    <Button
+        android:id="@+id/but_regist_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="30.0dip"
+        android:background="@drawable/publishbtn"
+        android:paddingBottom="5.0dip"
+        android:paddingTop="5.0dip"
+        android:text="@string/regist_submit"
+        android:textColor="@android:color/white"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/tv_regist_login_now"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/login_now"
+        android:textColor="#ffff4e00"
+        android:textSize="15.0sp" 
+        android:clickable="true"/>
+
+</LinearLayout>
